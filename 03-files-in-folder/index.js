@@ -1,6 +1,5 @@
 const path = require('path');
 const fs = require('fs');
-const { stdin, stdout, exit } = process;
 
 fs.readdir(path.join(__dirname, '/secret-folder'), {withFileTypes: true}, (err, files) => {
   files.forEach(file => {
